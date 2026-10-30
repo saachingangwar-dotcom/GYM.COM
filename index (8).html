@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO: change [City] to the client's city -->
+<title>Iron Force Fitness | Best Gym in [City] – Gym Near Me</title>
+<meta name="description" content="Iron Force Fitness – best gym and fitness center in [City]. Expert trainers, modern equipment, yoga, CrossFit, Zumba & HIIT. Book a free 7-day trial.">
+<meta name="keywords" content="gym near me, best gym in [City], fitness center in [City], personal trainer, CrossFit, yoga, Zumba">
+<meta property="og:title" content="Iron Force Fitness – Build Your Body. Build Your Confidence.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Local business structured data (edit details) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthClub","name":"Iron Force Fitness","telephone":"+91-90000-00000","address":{"@type":"PostalAddress","streetAddress":"123 Fitness Street","addressLocality":"[City]","addressCountry":"IN"}}</script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header id="nav">
+  <a href="#home" class="logo">IRON<span>FORCE</span></a>
+  <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#plans">Plans</a><a href="#classes">Classes</a>
+    <a href="#trainers">Trainers</a><a href="#gallery">Gallery</a><a href="#tools">Calculators</a><a href="#contact">Contact</a>
+    <a href="#plans" class="btn sm">Join Now</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. HERO -->
+<section id="home" class="hero">
+  <img class="hero-bg" data-img="hero" alt="Athlete training with barbell in a premium gym" fetchpriority="high">
+  <div class="hero-in">
+    <p class="eyebrow">IRON FORCE FITNESS · GYM IN [CITY]</p>
+    <h1>TRANSFORM YOUR BODY, <em>TRANSFORM YOUR LIFE.</em></h1>
+    <p class="sub">Build strength, boost fitness and live a healthier lifestyle with the best fitness center near you. <b>BUILD YOUR BODY. BUILD YOUR CONFIDENCE.</b></p>
+    <div class="cta"><a href="#plans" class="btn">JOIN NOW</a><a href="#trial" class="btn ghost">FREE 7-DAY TRIAL</a></div>
+    <ul class="benefits">
+      <li>🏋️ Expert Personal Trainers</li><li>⚙️ Modern Fitness Equipment</li><li>📋 Personalized Workout Plans</li>
+    </ul>
+  </div>
+  <div class="stats">
+    <div><b data-count="2500">0</b>+<span>Happy Members</span></div>
+    <div><b data-count="25">0</b>+<span>Expert Trainers</span></div>
+    <div><b data-count="12">0</b>+<span>Years Experience</span></div>
+    <div><b data-count="40">0</b>+<span>Weekly Classes</span></div>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about" class="sec">
+  <div class="wrap two">
+    <div class="reveal">
+      <p class="eyebrow">ABOUT US</p><h2>MORE THAN A GYM. A <em>COMMUNITY.</em></h2>
+      <p>Iron Force Fitness started with one goal: make world-class training accessible to everyone. Today our 10,000 sq. ft. facility helps beginners and athletes alike reach goals with science-based programs and real support.</p>
+      <div class="mv"><div><h3>Our Mission</h3><p>Empower every member to become stronger, healthier and more confident.</p></div>
+      <div><h3>Our Vision</h3><p>To be [City]'s most trusted fitness brand.</p></div></div>
+      <ul class="ticks"><li>Certified, experienced trainers</li><li>Premium imported equipment</li><li>Clean, spacious, air-conditioned floors</li><li>Flexible plans, transparent pricing</li><li>Supportive, motivating community</li></ul>
+    </div>
+    <div class="about-imgs reveal"><img data-img="about1" alt="Modern gym interior with rows of equipment" loading="lazy"><img data-img="about2" alt="Dumbbell rack in weights area" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 3. MEMBERSHIP (rendered from CONFIG.plans in script.js) -->
+<section id="plans" class="sec dark"><div class="wrap">
+  <p class="eyebrow">MEMBERSHIP PLANS</p><h2>CHOOSE YOUR <em>PLAN</em></h2>
+  <div id="planGrid" class="grid3"></div>
+  <p class="note">Online payment ready: connect Razorpay / Stripe in <code>script.js</code> → <code>startPayment()</code>. No payment is processed in this demo.</p>
+</div></section>
+
+<!-- 4. CLASSES -->
+<section id="classes" class="sec"><div class="wrap">
+  <p class="eyebrow">CLASSES & TIMETABLE</p><h2>FIND YOUR <em>WORKOUT</em></h2>
+  <div id="classGrid" class="grid3 classes"></div>
+  <h3 class="tt-h">Weekly Timetable</h3>
+  <div class="table-wrap"><table id="timetable"></table></div>
+</div></section>
+
+<!-- 5. TRAINERS -->
+<section id="trainers" class="sec dark"><div class="wrap">
+  <p class="eyebrow">PROFESSIONAL TRAINERS</p><h2>MEET THE <em>TEAM</em></h2>
+  <div id="trainerGrid" class="grid4"></div>
+  <p class="note">Sample trainer profiles for demonstration. Replace with real staff.</p>
+</div></section>
+
+<!-- 6. TRANSFORMATIONS -->
+<section id="results" class="sec"><div class="wrap">
+  <p class="eyebrow">TRANSFORMATION STORIES</p><h2>REAL GOALS. <em>REAL RESULTS.</em></h2>
+  <div id="resultGrid" class="grid3"></div>
+  <p class="note">⚠ Illustrative demo content – sample profiles only. Replace with real, consented member photos.</p>
+</div></section>
+
+<!-- 7. GALLERY -->
+<section id="gallery" class="sec dark"><div class="wrap">
+  <p class="eyebrow">FACILITIES & GALLERY</p><h2>INSIDE <em>IRON FORCE</em></h2>
+  <div id="galleryGrid" class="gallery"></div>
+</div></section>
+
+<!-- 8. FREE TRIAL FORM -->
+<section id="trial" class="sec"><div class="wrap narrow">
+  <p class="eyebrow">FREE 7-DAY TRIAL</p><h2>BOOK YOUR <em>FREE TRIAL</em></h2>
+  <form id="trialForm" novalidate>
+    <label>Full Name<input name="name" placeholder="Your name" autocomplete="name"><small></small></label>
+    <label>Phone Number<input name="phone" type="tel" placeholder="10-digit mobile" inputmode="numeric" autocomplete="tel"><small></small></label>
+    <label>Fitness Goal<select name="goal"><option value="">Select goal</option><option>Weight Loss</option><option>Muscle Gain</option><option>Strength</option><option>General Fitness</option><option>Yoga & Flexibility</option></select><small></small></label>
+    <label>Preferred Date<input name="date" type="date"><small></small></label>
+    <label>Preferred Time<select name="time"><option value="">Select time</option><option>Morning (6–10 AM)</option><option>Afternoon (12–4 PM)</option><option>Evening (5–10 PM)</option></select><small></small></label>
+    <button class="btn" type="submit">SUBMIT FREE TRIAL REQUEST</button>
+    <p class="note" id="formMsg" role="status"></p>
+  </form>
+</div></section>
+
+<!-- 9. OFFERS -->
+<section id="offers" class="sec dark"><div class="wrap">
+  <p class="eyebrow">OFFERS & EVENTS</p><h2>LIMITED-TIME <em>DEALS</em></h2>
+  <div id="offerGrid" class="grid4"></div>
+</div></section>
+
+<!-- 10. CALCULATORS -->
+<section id="tools" class="sec"><div class="wrap">
+  <p class="eyebrow">BMI & CALORIE CALCULATOR</p><h2>KNOW YOUR <em>NUMBERS</em></h2>
+  <div class="grid2">
+    <form class="card" id="bmiForm"><h3>BMI Calculator</h3>
+      <label>Height (cm)<input id="bh" type="number" min="100" max="250"></label>
+      <label>Weight (kg)<input id="bw" type="number" min="25" max="300"></label>
+      <button class="btn" type="submit">Calculate BMI</button><p class="result" id="bmiOut" role="status"></p></form>
+    <form class="card" id="calForm"><h3>Daily Calorie Estimate</h3>
+      <label>Gender<select id="cg"><option value="m">Male</option><option value="f">Female</option></select></label>
+      <label>Age<input id="ca" type="number" min="14" max="90"></label>
+      <label>Height (cm)<input id="ch" type="number" min="100" max="250"></label>
+      <label>Weight (kg)<input id="cw" type="number" min="25" max="300"></label>
+      <label>Activity<select id="cact"><option value="1.2">Sedentary</option><option value="1.375">Light (1–3 days/wk)</option><option value="1.55">Moderate (3–5 days/wk)</option><option value="1.725">Very active (6–7 days/wk)</option></select></label>
+      <button class="btn" type="submit">Estimate Calories</button><p class="result" id="calOut" role="status"></p></form>
+  </div>
+  <p class="note">Results are general estimates, not medical advice. Consult a doctor or dietitian before changing diet or exercise.</p>
+</div></section>
+
+<!-- 11. INSTAGRAM -->
+<section id="instagram" class="sec dark"><div class="wrap">
+  <p class="eyebrow">INSTAGRAM</p><h2>FOLLOW <em>@IRONFORCEFITNESS</em></h2>
+  <div id="igGrid" class="ig"></div>
+  <p class="center"><a class="btn" data-ig target="_blank" rel="noopener">FOLLOW US ON INSTAGRAM</a></p>
+</div></section>
+
+<!-- 12. TESTIMONIALS -->
+<section id="reviews" class="sec"><div class="wrap narrow">
+  <p class="eyebrow">TESTIMONIALS</p><h2>WHAT MEMBERS <em>SAY</em></h2>
+  <div class="slider"><div id="slides"></div>
+    <div class="slider-ctl"><button id="prev" aria-label="Previous review">←</button><button id="next" aria-label="Next review">→</button></div></div>
+  <p class="note">Sample reviews for demonstration.</p>
+</div></section>
+
+<!-- 13. CONTACT -->
+<section id="contact" class="sec dark"><div class="wrap two">
+  <div>
+    <p class="eyebrow">CONTACT</p><h2>VISIT <em>US</em></h2>
+    <ul class="contact">
+      <li>📍 123 Fitness Street, [Area], [City] – 000000</li>
+      <li>📞 <a data-call>+91 90000 00000</a></li>
+      <li>✉️ <a href="mailto:info@ironforcefitness.com">info@ironforcefitness.com</a></li>
+      <li>🕔 Mon–Sat: 5:30 AM – 10:30 PM · Sun: 7 AM – 1 PM</li>
+    </ul>
+    <p><a class="btn" data-wa target="_blank" rel="noopener">WhatsApp Us</a> <a class="btn ghost" data-gbp target="_blank" rel="noopener">Google Business Profile</a></p>
+    <p class="social"><a data-ig target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a><a href="#" target="_blank" rel="noopener">YouTube</a></p>
+  </div>
+  <!-- Replace src with your Google Maps "Embed a map" link -->
+  <iframe title="Gym location map" loading="lazy" src="https://www.google.com/maps?q=gym&output=embed"></iframe>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap foot"><div><a href="#home" class="logo">IRON<span>FORCE</span></a><p>BUILD YOUR BODY. BUILD YOUR CONFIDENCE.</p></div>
+  <p>Gym near me · Best gym in [City] · Fitness center in [City]</p>
+  <p>© <span id="yr"></span> Iron Force Fitness. All rights reserved.</p></div>
+</footer>
+
+<!-- Floating actions -->
+<a class="fab wa" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<a class="fab call" data-call aria-label="Call us">📞</a>
+<a class="sticky-join" href="#plans">JOIN NOW</a>
+
+<div id="lightbox" hidden><button id="lbClose" aria-label="Close">✕</button><button id="lbPrev" aria-label="Previous">‹</button><img alt=""><button id="lbNext" aria-label="Next">›</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>
